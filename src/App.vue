@@ -1,27 +1,26 @@
 <template>
   <div>
-    <Child :newMessage="message" @changeMessage="cambiandoMensaje" />
+    <ChildTwo>
+      <template v-slot:mainSlot="scopeSlot">
+        <h3>{{ scopeSlot.mensaje }}</h3>
+      </template>
+    </ChildTwo>
   </div>
 </template>
 
 <script>
-import Child from './components/Child.vue'
+import ChildTwo from './components/ChildTwo.vue'
 
 export default {
   name: 'App',
   components: {
-    Child
+    ChildTwo
   },
   data() {
     return {
       message: 'pizza'
     }
   },
-  methods: {
-    cambiandoMensaje(event) {
-      this.message = event
-    }
-  }
 }
 </script>
 

@@ -21,6 +21,7 @@
 - Definición y validación de propiedades
 - Eventos emitidos
 - Slots
+- Scope Slots
 
 ### Project Setup
 
