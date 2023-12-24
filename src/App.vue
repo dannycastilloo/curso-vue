@@ -1,20 +1,25 @@
 <template>
   <div>
-    <ChildComponent :newMessage="message" />
+    <Child :newMessage="message" @changeMessage="cambiandoMensaje" />
   </div>
 </template>
 
 <script>
-import ChildComponent from './components/Child.vue'
+import Child from './components/Child.vue'
 
 export default {
   name: 'App',
   components: {
-    ChildComponent
+    Child
   },
   data() {
     return {
       message: 'pizza'
+    }
+  },
+  methods: {
+    cambiandoMensaje(event) {
+      this.message = event
     }
   }
 }
