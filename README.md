@@ -18,6 +18,7 @@
 
 ### Sesión 4
 - Comunicación de componentes
+- Definición y validación de propiedades
 
 ## Recommended IDE Setup
 

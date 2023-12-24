@@ -1,16 +1,21 @@
 <template>
   <div>
-    <First />
+    <ChildComponent :newMessage="message" />
   </div>
 </template>
 
 <script>
-import First from './components/First.vue'
+import ChildComponent from './components/Child.vue'
 
 export default {
   name: 'App',
   components: {
-    First
+    ChildComponent
+  },
+  data() {
+    return {
+      message: 'pizza'
+    }
   }
 }
 </script>
