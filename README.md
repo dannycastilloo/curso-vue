@@ -1,6 +1,4 @@
-## Curso de Vue
-
-## Temas
+### Curso de Vue
 
 ### Sesión 1
 - Progresividad
@@ -13,6 +11,9 @@
 - Propiedades computadas
 - Watch
 - Dynamic Styles
+
+### Sesión 3
+- Componentes
 
 ## Recommended IDE Setup
 
