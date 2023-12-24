@@ -14,6 +14,10 @@
 
 ### Sesión 3
 - Componentes
+- Ciclo de vida de componentes
+
+### Sesión 4
+- Comunicación de componentes
 
 ## Recommended IDE Setup
 

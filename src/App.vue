@@ -1,5 +1,7 @@
 <template>
-  <First />
+  <div>
+    <First />
+  </div>
 </template>
 
 <script>
