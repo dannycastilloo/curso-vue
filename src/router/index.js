@@ -13,7 +13,12 @@ const routes = [
     {
         path: '/food',
         name: 'food',
-        component: FoodView
+        component: FoodView,
+        beforeEnter: (to, from, next) => {
+            console.log('Estás entrando en la ruta de Food')
+            console.log({ to, from })
+            next({ name: 'lastname', params: { id: 'someValidId' } })
+        }
     },
     {
         path: '/name',
@@ -30,5 +35,15 @@ const router = createRouter({
     history: createWebHistory(),
     routes,
 });
+
+router.beforeEach((to, from, next) => {
+    console.log({ to, from })
+    next()
+})
+
+router.afterEach((to, from) => {
+    console.log('After Each')
+    console.log({ to, from })
+})
 
 export default router

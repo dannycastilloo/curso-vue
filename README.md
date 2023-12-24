@@ -26,6 +26,8 @@
 
 ### Sesión 5
 - Rutas programadas y dinámicas
+- Global guards
+- Router guard
 
 ### Project Setup
 
