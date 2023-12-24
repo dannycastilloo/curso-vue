@@ -22,6 +22,10 @@
 - Eventos emitidos
 - Slots
 - Scope Slots
+- Event Bus
+
+### Sesión 5
+- Routing
 
 ### Project Setup
 

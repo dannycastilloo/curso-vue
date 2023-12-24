@@ -1,24 +1,16 @@
 <template>
   <div>
-    <ChildTwo />
-    <Brother />
+    <Home />
   </div>
 </template>
 
 <script>
-import ChildTwo from './components/ChildTwo.vue'
-import Brother from './components/Brother.vue'
+import Home from './view/Home.vue';
 
 export default {
   name: 'App',
   components: {
-    ChildTwo,
-    Brother
-  },
-  data() {
-    return {
-      message: 'pizza'
-    }
+    Home
   },
 }
 </script>
