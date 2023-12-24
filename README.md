@@ -25,7 +25,7 @@
 - Event Bus
 
 ### Sesión 5
-- Routing
+- Rutas programadas y dinámicas
 
 ### Project Setup
 
