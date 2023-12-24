@@ -1,20 +1,19 @@
 <template>
   <div>
-    <ChildTwo>
-      <template v-slot:mainSlot="scopeSlot">
-        <h3>{{ scopeSlot.mensaje }}</h3>
-      </template>
-    </ChildTwo>
+    <ChildTwo />
+    <Brother />
   </div>
 </template>
 
 <script>
 import ChildTwo from './components/ChildTwo.vue'
+import Brother from './components/Brother.vue'
 
 export default {
   name: 'App',
   components: {
-    ChildTwo
+    ChildTwo,
+    Brother
   },
   data() {
     return {
