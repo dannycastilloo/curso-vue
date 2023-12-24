@@ -15,9 +15,9 @@ const routes = [
         name: 'food',
         component: FoodView,
         beforeEnter: (to, from, next) => {
-            console.log('Estás entrando en la ruta de Food')
+            console.log('beforeEnter')
             console.log({ to, from })
-            next({ name: 'lastname', params: { id: 'someValidId' } })
+            next()
         }
     },
     {
