@@ -1,6 +1,18 @@
-# curso-vue
+## Curso de Vue
 
-This template should help get you started developing with Vue 3 in Vite.
+## Temas
+
+### Sesión 1
+- Progresividad
+- Instalación desde el CDN y Vue CLI
+- Two Way Data Binding
+
+### Sesión 2
+- Directivas v-for, v-on, v-bind, v-if, v-else, v-show
+- Métodos
+- Propiedades computadas
+- Watch
+- Dynamic Styles
 
 ## Recommended IDE Setup
 

@@ -16,7 +16,7 @@
     <br>
 
     <h2 v-show="showName">Mi nombre es Danny</h2>
-    
+    <button @click="changeShowStatus">Show Name</button>
     <br>
 
     <h2>{{ isLinternaOn }}</h2>
@@ -45,15 +45,19 @@ export default {
     },
     turnOnOff() {
       this.linterna = !this.linterna
-      this.changeShowStatus()
     },
     changeShowStatus() {
       this.showName = !this.showName
-    }
+    },
   },
   computed: {
     isLinternaOn() {
       return this.linterna ? 'La linterna está encendida' : 'La linterna está apagada'
+    },
+  },
+  watch: {
+    linterna(value, oldValue) {
+      console.log(`La linterna estaba en ${ oldValue } y ahora está en ${ value }`)
     }
   }
 }
